@@ -227,9 +227,6 @@ nav li:hover:not(.active) {background-color: whitesmoke;}
     color: inherit;
 }
 
-#brand {
-  font-size: 3rem;
-}
 
 nav ul li {
   list-style: none;
