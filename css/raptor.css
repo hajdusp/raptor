@@ -245,6 +245,7 @@ padding: .75rem 1rem;
 
 .toggle-button {
     padding: .75rem 0;
+    line-height: inherit; /*prevent jumpy navbar line height*/
     background: transparent;
     border: none;
 }
