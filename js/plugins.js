@@ -33,15 +33,14 @@ Serving many youtube videos:
 http://www.sitepoint.com/faster-youtube-embeds-javascript
 
 
-Smooth scrolling by Robin Leve:
-http://codepen.io/rleve/pen/iCbgy
-
 
 Cookie Consent plugin by Silktide:
 https://silktide.com/tools/cookie-consent/download
 
 
 */
+
+// Smooth scrolling by Robin Leve: http://codepen.io/rleve/pen/iCbgy
 
 (function() {
 
