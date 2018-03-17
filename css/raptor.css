@@ -240,11 +240,11 @@ margin-right: -15px;
 
 .nav-links li a {
 display: block; /* NOTE: need for padding properly */
-padding: 0.75rem 1rem;
+padding: .75rem 1rem;
 }
 
 .toggle-button {
-    padding: .5rem 0;
+    padding: .75rem 0;
     background: transparent;
     border: none;
 }
