@@ -213,6 +213,7 @@ hr {
 --------------------------------------------------------------*/
 .navbar {
     top: 0;
+    width: 100%;
     /* top and width is good for fixed nav!!! */
     position: relative;
     /* If it is fixed, check the main elemnt! */
