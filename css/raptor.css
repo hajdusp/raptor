@@ -89,7 +89,7 @@ h1 small, h2 small, h3 small {
 .underline::after {
   content: "";
   display: block;
-  border-top: 4px solid;
+  border-top: 6px solid;
   width: 3rem;
   margin-top: 1rem;
 }
