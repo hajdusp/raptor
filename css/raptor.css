@@ -221,7 +221,7 @@ hr {
     z-index: 100;
 }
 
-nav li:hover:not(.active) {background-color: whitesmoke;}
+nav li:hover:not(.active) {background-color: gray;}
 
 .active a, .current-menu-item a {
     font-weight: 700;
