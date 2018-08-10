@@ -135,6 +135,10 @@ a {
     color: #8BC34A;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /*                                         TABLES
 ---------------------------------------------------------------------------------*/
 /* tables still need cellspacing="0" in the markup */
@@ -221,7 +225,7 @@ hr {
     z-index: 100;
 }
 
-nav li:hover:not(.active) {color: gray;}
+/*nav li:hover:not(.active) {color: gray;}*/
 
 .active a, .current-menu-item a {
     font-weight: 700;
