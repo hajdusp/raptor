@@ -51,10 +51,13 @@
         <div class="row align-items-center">
           <div class="col bolder">BRAND</div>
           <div class="col-auto">
-            <button class="btn btn-transparent toggle-button">MENU <span class="icon hamburger"></span></button>
+            <button class="btn btn-transparent toggle-menu-button">
+                <span class="menu-icon icon-burger"></span>
+                <span class="menu-icon icon-close hide"></span>
+            </button>
           </div>
           <nav class="col-md-auto">
-              <ul class="nav-links toggle-target">
+              <ul class="nav-links toggle-menu-links">
                 <li><a href="">Menu item</a></li>
                 <li><a href="">Menu item</a></li>
               </ul>
@@ -336,7 +339,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <script src="js/plugins.js"></script>
-    <script src="js/menu-plain.js"></script>
+    <script src="js/aria-menu.js"></script>
     <script src='./js/navigation.js'></script>
     <script src='./js/skip-link-focus-fix.js'></script>
 </body>
