@@ -248,14 +248,26 @@ display: block; /* NOTE: need for padding properly */
 padding: .75rem 1rem;
 }
 
-.toggle-menu-button {
+.toggle-nav-button {
     padding: .75rem;
     background: transparent;
     border: none;
 }
 
-.toggle-menu-links {
+.toggle-nav-links {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links li {
+  display: inline-block;
+  }
+  .toggle-nav-button {
+    display: none;
+  }
+  .toggle-nav-links {
+    display: block;
+  }
 }
 
 /*                                         ICONS
@@ -265,7 +277,7 @@ padding: .75rem 1rem;
 /* Source: 
 https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4 
 */
-.menu-icon {
+.icon {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -275,12 +287,16 @@ https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-
     background-size: 100% 100%;
 }
 
-.icon-burger {
-    background-image: url(../css/burger.svg);
+.icon-menu {
+    background-image: url(../css/menu.svg);
 }
 
 .icon-close {
     background-image: url(../css/close.svg);
+}
+
+.icon-check {
+    background-image: url(../css/check.svg);
 }
 
 .show {
@@ -290,19 +306,6 @@ https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-
 .hide {
     display: none;
 }
-
-@media screen and (min-width: 768px) {
-  .nav-links li {
-  display: inline-block;
-  }
-  .toggle-menu-button {
-    display: none;
-  }
-  .toggle-menu-links {
-    display: block;
-  }
-}
-
 /*                                     BREADCRUMB NAVIGATION
 --------------------------------------------------------------------------*/
 .breadcrumb {margin: auto 0;}
@@ -594,6 +597,82 @@ textarea {
     color: #FF5E40;
     content: ' *';
 }
+
+/*--------------------------------------------------------------
+# Custom checkbox
+source: https://codepen.io/takeradi/pen/rjJpKK
+--------------------------------------------------------------*/
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #ccc;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Change background*/
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #8BC34A;
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+/***************END**************/
+
+
+
+
 /*--------------------------------------------------------------
 # MISC
 --------------------------------------------------------------*/
