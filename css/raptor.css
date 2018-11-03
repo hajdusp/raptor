@@ -600,17 +600,17 @@ textarea {
 
 /*--------------------------------------------------------------
 # Custom checkbox
-source: https://codepen.io/takeradi/pen/rjJpKK
+source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
 --------------------------------------------------------------*/
 
 .checkbox input[type="checkbox"] {
     display: none;
+    /*hide the deafult checkbox*/
 }
 
 .checkbox label {
     position: relative;
     display: inline-block;
-    
     /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
     padding-left: 22px;
 }
