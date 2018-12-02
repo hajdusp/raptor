@@ -1,0 +1,95 @@
+.container-adaptive {
+    margin: 0 auto;
+    max-width: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card-fix {
+    width: 150px;
+    height: 160px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    .card-fix {
+        width: 200px;
+        height: 291px;
+    }
+  }
+
+@media screen and (min-width: 480px) {
+    .container-adaptive {
+        max-width: 440px;
+    }
+  }
+
+  @media screen and (min-width: 760px) {
+    .container-adaptive {
+        max-width: 640px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .container-adaptive {
+        max-width: 1260px;
+    }
+  }
+
+
+.card-image {
+    display: inline-block;
+    font-family: "object-fit:contain";
+    object-fit: contain;
+}
+
+.card-title {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.card-text {
+    display: none;
+}
+
+.card-fix:hover {
+    margin: 0; /*this let the card-back stretch by removing the top and bottom margins*/
+}
+
+
+.card-fix:hover {
+    transition: all 0.3s ease;
+    display: block;
+    height: 373px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0 10px 14px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.2);
+    -webkit-transition: -webkit-box-shadow 0.2s;
+}
+
+.card-fix:hover .card-header {
+    border-bottom: 1px solid gray;
+}
+
+.card-fix:hover .card-image {
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+}
+
+.card-fix:hover .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 53px;
+    
+}
+
+.card-fix:hover .card-text {
+    display: block;
+}
