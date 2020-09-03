@@ -35,20 +35,29 @@
 <body>
 
     <!-- MENU
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="navbar">
         <div class="container">
-            <a href="#" id="brand" class="bolder float-left">BRAND</a>
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">MENU <span class="icon hamburger"></span></button>
-                <ul>
-                    <li><a href="index.html">Elements</a></li>
-                    <li><a href="gridsystem.html">Gridsystem</a></li>
-                    <li><a href="images.html">Images</a></li>
-                    <li class="active"><a href="blog-sidebar.html">Blog-sidebar</a></li>
-                    <li><a href="blog-full.html">Blog-full</a></li>
-                </ul>
-            </nav>
+            <div class="row align-items-center">
+                <div class="col bolder">BRAND</div>
+                <div class="col-auto">
+                    <button class="btn toggle-nav-button">
+                        <span class="icon icon-menu"></span>
+                        <span class="icon icon-close hide"></span>
+                    </button>
+                </div>
+                <nav class="col-md-auto">
+                    <ul class="nav-links toggle-nav-links">
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="gridsystem.html">Gridsystem</a></li>
+                        <li><a href="flip-card.html">Flip card</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="blog-sidebar.html">Blog sidebar</a></li>
+                        <li><a href="blog-full.html">Blog full</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
     <!-- SINGLE HEADER
@@ -181,8 +190,9 @@
     </footer>
     <!-- SCRIPTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     <script src="js/plugins.js"></script>
-    <script src='./js/navigation.js'></script>
+    <script src="js/aria-menu.js"></script>
     <script src='./js/skip-link-focus-fix.js'></script>
 </body>
 
