@@ -1,1 +1,1 @@
-Raptor is an opensource responsive frontend framework.
+Raptor is an opensource responsive html/css/js boilerplate for very fast start.
