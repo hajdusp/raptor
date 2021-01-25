@@ -53,7 +53,8 @@ p {
 
 /* use only one h1, but you can use more h2-h5 on one page (SEO in mind) */
 /* use .h1-.h5 classes  if only the font size matters (Accessibility in mind) */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
     font-weight: bold;
     color: black;
 }
