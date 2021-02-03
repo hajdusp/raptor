@@ -148,6 +148,7 @@ hr {
     border-radius: 4px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+    cursor: pointer;
     background-color: var(--blue);
 }
 
