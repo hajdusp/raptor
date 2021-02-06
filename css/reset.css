@@ -230,6 +230,19 @@ textarea {
     content: ' *';
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ADADAD;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ADADAD;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ADADAD;
+}
+
 /*--------------------------------------------------------------
 # Custom checkbox
 source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
