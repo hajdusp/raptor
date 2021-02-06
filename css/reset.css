@@ -243,6 +243,7 @@ textarea {
     color: #ADADAD;
 }
 
+
 /*--------------------------------------------------------------
 # Custom checkbox
 source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
@@ -250,14 +251,14 @@ source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-an
 
 .checkbox input[type="checkbox"] {
     display: none;
-    /*hide the deafult checkbox*/
 }
 
 .checkbox label {
     position: relative;
     display: inline-block;
-    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    padding-left: 22px;
+    padding-left: 32px;
+    color: #272B3C;
+    font-size: 15px;
 }
 
 .checkbox label::before,
@@ -270,27 +271,28 @@ source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-an
 }
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before{
-    height: 16px;
-    width: 16px;
-    border: 1px solid #ccc;
-    left: 0px;
+.checkbox label::before {
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    border: 1px solid #D3D6DB;
+    box-shadow: 0 3px 5px 0 rgba(44, 44, 44, 0.13);
+    border-radius: 2.5px;
+}
 
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-    top: 3px;
+.checkbox label[validation-error="true"]::before {
+    border: 1px solid #FF0000;
 }
 
 /*Checkmark of the fake checkbox*/
 .checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(-45deg);
-    left: 4px;
-    top: 7px;
+    height: 20px;
+    width: 20px;
+    background: #00b6ff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
+    left: 0;
+    top: 0;
 }
 
 /*Hide the checkmark by default*/
@@ -303,16 +305,7 @@ source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-an
     content: "";
 }
 
-/*Change background*/
-.checkbox input[type="checkbox"]:checked + label::before {
-    background-color: #8BC34A;
-}
-
 /*Adding focus styles on the outer-box of the fake checkbox*/
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
 }
-
-
-
-
