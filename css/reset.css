@@ -152,15 +152,6 @@ hr {
     background-color: var(--blue);
 }
 
-/* GRIDS
---------------------------------------------------------------------------*/
-.container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 /*                                         INPUTS
 https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms
 --------------------------------------------------------------------------------------------*/
@@ -308,4 +299,13 @@ source: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-an
 /*Adding focus styles on the outer-box of the fake checkbox*/
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
+}
+
+/* LAYOUT
+--------------------------------------------------------------------------*/
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
