@@ -1,1 +1,0 @@
-<link href="https://cdn.jsdelivr.net/gh/hajdusp/raptor/css/raptor.css" rel="stylesheet">
