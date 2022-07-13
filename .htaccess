@@ -1,5 +1,4 @@
 ### initialize all revrites ###
-
 RewriteEngine On
 
 ### redirect an error 404 to home page ###
@@ -20,6 +19,6 @@ RewriteEngine On
 #RewriteRule ^/$ /index.shtml [R=301,L]
 
 ### Allow .shtml and server side includes on Apache ###
-#Options +Includes
-#AddType text/html .shtml
-#AddOutputFilter INCLUDES .shtml
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml

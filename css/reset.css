@@ -2,9 +2,21 @@
    --------------------------------------------------------------------------------------------
    */
 :root {
-    --text-color: #2C2C2C;
-    --red: #f44336;
-    --blue: #2196f3;
+    --ruby: #E02020;
+    --amber: #FA6400;
+    --citrine: #F7B500;
+    --emerald: #6DD400;
+    --amazonite: #44D7B6;
+    --apatite: #32C5FF;
+    --sapphire: #0091FF;
+    --iolite: #6236FF;
+    --amethyst: #B620E0;
+    --graphite: #6D7278;
+    --quartz: rgba(0,0,0,0.1);
+    --magnetite: rgba(0,0,0,0.25);
+    --hematite: rgba(0,0,0,0.5);
+    --basalt: rgba(0,0,0,0.85);
+    --obsidian: #000000;
 }
 /*                                      RESET
 --------------------------------------------------------------------------------------------
@@ -13,6 +25,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 *,
 *:before,
@@ -39,16 +52,16 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /* better use body typo separated here (instead of with other HTML5 elements), avoid messing with external js generated styles */
 
 body {
-    color: var(--text-color);
+    color: var(--basalt);
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
     line-height: 1.375;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 /* use only one h1, but you can use more h2-h5 on one page (SEO in mind) */
@@ -56,16 +69,7 @@ p {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
     font-weight: bold;
-    color: black;
-}
-
-.underline::after {
-    content: "";
-    display: block;
-    border-top: 6px solid;
-    width: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    color: var(--obsidian);
 }
 
 img {
