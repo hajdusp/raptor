@@ -134,14 +134,14 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: white;
     padding: 5px 15px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--sapphire);
     border-radius: 4px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     cursor: pointer;
-    background-color: var(--blue);
+    background-color: var(--sapphire);
 }
 
 /*                                         INPUTS
