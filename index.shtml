@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--#include virtual="includes/navbar/navbar.shtml" -->
-<!--#include virtual="includes/main/main.shtml" -->
-<!--#include virtual="includes/footer/footer.shtml" -->
+<!--#include virtual="includes/navbar.shtml" -->
+<!--#include virtual="includes/main.shtml" -->
+<!--#include virtual="includes/footer.shtml" -->
 </body>
 </html>

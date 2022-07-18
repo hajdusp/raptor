@@ -1,0 +1,5 @@
+<main>
+    <h1>Main</h1>
+    <p>this is the main section</p>
+    <!--#include virtual="buttons/buttons.shtml" -->
+</main>

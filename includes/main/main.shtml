@@ -1,7 +1,0 @@
-<main>
-    <picture>
-        <source srcset="image.webp" type="image/webp">
-        <source srcset="image.jpg" type="image/jpeg">
-        <img loading="lazy" src="https://via.placeholder.com/150" alt="..." />
-    </picture>
-</main>

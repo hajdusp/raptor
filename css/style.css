@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url("../includes/navbar/navbar.css");
-@import url("../includes/main/main.css");
-@import url("../includes/footer/footer.css");
+@import url("navbar.css");
+@import url("main.css");
+@import url("footer.css");
 @import url("visibility-classes.css");
