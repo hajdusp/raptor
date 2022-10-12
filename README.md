@@ -1,5 +1,5 @@
 Main goals of this project:
-- create an HTML starter template for different projects fast, without any build tools
+- create an HTML / SHTML starter template for different projects fast
 - easily integrate the html components and styles later into your application 
 
 Managing releases:
