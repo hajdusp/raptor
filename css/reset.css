@@ -2,21 +2,18 @@
    --------------------------------------------------------------------------------------------
    */
 :root {
-    --ruby: #E02020;
-    --amber: #FA6400;
-    --citrine: #F7B500;
-    --emerald: #6DD400;
-    --amazonite: #44D7B6;
-    --apatite: #32C5FF;
-    --sapphire: #0091FF;
-    --iolite: #6236FF;
-    --amethyst: #B620E0;
-    --graphite: #6D7278;
-    --quartz: rgba(0,0,0,0.1);
-    --magnetite: rgba(0,0,0,0.25);
-    --hematite: rgba(0,0,0,0.5);
-    --basalt: rgba(0,0,0,0.85);
-    --obsidian: #000000;
+    --red: #E02020;
+    --orange: #FA6400;
+    --gold: #F7B500;
+    --green: #6DD400;
+    --coral: #44D7B6;
+    --lightblue: #32C5FF;
+    --blue: #0091FF;
+    --purple: #6236FF;
+    --pink: #B620E0;
+    --gray: #6D7278;
+    --text: #333333;
+    --heading: #111111;
 }
 /*                                      RESET
 --------------------------------------------------------------------------------------------
@@ -52,7 +49,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /* better use body typo separated here (instead of with other HTML5 elements), avoid messing with external js generated styles */
 
 body {
-    color: var(--basalt);
+    color: var(--text);
     font-family: sans-serif;
     font-size: 1.6rem;
     font-weight: normal;
@@ -69,7 +66,7 @@ p {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
     font-weight: bold;
-    color: var(--obsidian);
+    color: var(--heading);
     margin-bottom: 1rem;
 }
 
@@ -141,8 +138,8 @@ hr {
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    background-color: var(--graphite);
-    border: .1rem solid var(--graphite);
+    background-color: var(--blue);
+    border: .1rem solid var(--blue);
     border-radius: .5rem;
     display: inline-flex;
     align-items: center;
@@ -243,9 +240,17 @@ textarea {
 
 /* LAYOUT
 --------------------------------------------------------------------------*/
+/* keep the footer at the bottom*/
+#body-grid {
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }

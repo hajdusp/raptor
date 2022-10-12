@@ -8,9 +8,11 @@
     <title>Raptor index</title>
     <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/visibility-classes.css">
 </head>
-<body>
+<body id="body-grid">
 <!--#include virtual="includes/navbar.shtml" -->
 <!--#include virtual="includes/main.shtml" -->
 <!--#include virtual="includes/footer.shtml" -->

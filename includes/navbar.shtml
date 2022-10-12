@@ -1,3 +1,5 @@
 <nav>
-    navbar works <span class="material-icons">menu</span>
+    <div class="container">
+        <p>navbar works</p>
+    </div>
 </nav>

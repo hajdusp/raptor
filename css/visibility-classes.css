@@ -6,6 +6,10 @@
     display: flex !important;
 }
 
+.display-grid {
+    display: grid !important;
+}
+
 .display-none {
     display: none !important;
 }
