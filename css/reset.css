@@ -85,7 +85,7 @@ a {
     color: var(--blue);
 }
 
-.link:hover {
+a:hover {
     text-decoration: underline;
 }
 
