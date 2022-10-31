@@ -8,4 +8,4 @@ https://docs.github.com/en/repositories/releasing-projects-on-github/managing-re
 
 Latest release link:
 
-https://cdn.jsdelivr.net/gh/hajdusp/raptor@v1.0.2/css/reset.css
+https://cdn.jsdelivr.net/gh/hajdusp/raptor@v1.0.3/css/reset.css
