@@ -157,6 +157,7 @@ hr {
 
 .button:hover {
     opacity: 0.95;
+    text-decoration: none;
 }
 
 /*                                         INPUTS
