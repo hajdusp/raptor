@@ -6,8 +6,15 @@ Managing releases:
 
 https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 
-.Latest release link:
+.Latest release:
 [source]
 ----
 https://cdn.jsdelivr.net/gh/hajdusp/raptor@v1.0.4/css/reset.css
+----
+
+
+.Material icons:
+[source]
+----
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ----
