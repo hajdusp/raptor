@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5,
 }
 
 h1, .h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 @media (max-width: 759.9px) {
   h1, .h1 {
