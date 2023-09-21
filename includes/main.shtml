@@ -1,6 +1,0 @@
-<main>
-    <div class="container">
-        <p>main works</p>
-        <button class="button">Button</button>
-    </div>
-</main>

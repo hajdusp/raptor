@@ -1,5 +1,9 @@
-<nav>
-    <div class="container">
-        <p>navbar works</p>
-    </div>
-</nav>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="">Nav link item</a></li>
+            <li><a href="">Nav link item</a></li>
+            <li><a href="">Nav link item</a></li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,23 @@
+@mixin tablet-landscape {
+  @media (max-width: 1279.9px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (max-width: 1019.9px) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape {
+  @media (max-width: 759.9px) {
+    @content;
+  }
+}
+
+@mixin mobile-portrait {
+  @media (max-width: 479.9px) {
+    @content;
+  }
+}
