@@ -1,1 +1,23 @@
-<h2>Forms</h2>
+<div class="demo-form">
+    <h2>Forms</h2>
+    <form method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+        <input type="submit" value="Submit using GET" class="button">
+        <div class="error">error message color</div>
+    </form>
+</div>
+
+<div class="demo-form demo-form2">
+    <h2>Forms</h2>
+    <form method="get">
+        <label for="fname2">First name:</label>
+        <input type="text" id="fname2" name="fname">
+        <label for="lname2">Last name:</label>
+        <input type="text" id="lname2" name="lname">
+        <input type="submit" value="Submit using GET" class="button">
+        <div class="error">error message color</div>
+    </form>
+</div>

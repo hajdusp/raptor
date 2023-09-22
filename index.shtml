@@ -9,14 +9,14 @@
     <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="demo.css">
 </head>
-<body id="body-grid">
+<body class="body-grid">
 <!--#include virtual="includes/navbar.shtml" -->
 <main>
     <div class="container">
         <!--#include virtual="includes/typography.shtml" -->
         <!--#include virtual="includes/forms.shtml" -->
-        <button class="button">Button</button>
     </div>
 </main>
 <!--#include virtual="includes/footer.shtml" -->

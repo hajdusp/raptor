@@ -1,0 +1,99 @@
+select,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+select,
+textarea {
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--r-lightgray);
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 1px solid var(--r-blue);
+  border-color: transparent;
+}
+
+
+.search-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 38px;
+}
+
+.search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 38px;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.required:after {
+  color: var(--r-red);
+  content: ' *';
+}
+
+.error {
+  color: var(--r-red);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ADADAD;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ADADAD;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ADADAD;
+}

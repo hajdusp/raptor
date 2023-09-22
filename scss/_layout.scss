@@ -1,0 +1,29 @@
+/* keep footer at the bottom */
+.body-grid {
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /*  nav main footer */
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack */
+/* You need them after using floating elements, for example floating images in blog posts */
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
