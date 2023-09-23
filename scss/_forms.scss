@@ -64,7 +64,6 @@ input:focus {
 label {
   display: block;
   margin-bottom: .5rem;
-  font-weight: bold;
 }
 
 input[type="radio"] {
@@ -86,14 +85,14 @@ textarea {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ADADAD;
+  color: var(--r-gray);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #ADADAD;
+  color: var(--r-gray);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #ADADAD;
+  color: var(--r-gray);
 }

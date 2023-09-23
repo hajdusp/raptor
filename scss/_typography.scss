@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5,
 h1, .h1 {
   font-size: 2rem;
 
-  @include mobile-landscape {
+  @include mobile-portrait {
     font-size: 1.5rem;
   }
 }
@@ -28,7 +28,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.5rem;
 
-  @include mobile-landscape {
+  @include mobile-portrait {
     font-size: 1.25rem;
   }
 }
@@ -36,7 +36,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.25rem;
 
-  @include mobile-landscape {
+  @include mobile-portrait {
     font-size: 1.125rem;
   }
 }
@@ -73,8 +73,8 @@ a {
 hr {
   height: 1px;
   border: 0;
-  border-top: 1px solid #eee;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border-top: 1px solid var(--r-lightgray);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0;
 }
