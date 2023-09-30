@@ -1,5 +1,3 @@
-@import "media-queries";
-
 body {
   color: var(--r-text);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -19,26 +17,14 @@ h1, h2, h3, h4, h5,
 
 h1, .h1 {
   font-size: 2rem;
-
-  @include mobile-portrait {
-    font-size: 1.5rem;
-  }
 }
 
 h2, .h2 {
   font-size: 1.5rem;
-
-  @include mobile-portrait {
-    font-size: 1.25rem;
-  }
 }
 
 h3, .h3 {
   font-size: 1.25rem;
-
-  @include mobile-portrait {
-    font-size: 1.125rem;
-  }
 }
 
 h4, .h4 {
