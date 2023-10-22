@@ -77,6 +77,39 @@ label {
   margin-bottom: 0;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+.checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position:relative;
+}
+
+input[type=checkbox] + label:after {
+  font-family: 'Material Icons';
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  border: 1px solid #757575;
+  border-radius: 2px;
+}
+
+input[type=checkbox]:checked + label:after {
+  content: "\E5CA";
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  background: var(--r-blue);
+  border-color: var(--r-blue);
+}
+
 input[type="radio"] {
   vertical-align: text-bottom;
 }
