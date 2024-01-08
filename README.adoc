@@ -9,7 +9,7 @@ https://docs.github.com/en/repositories/releasing-projects-on-github/managing-re
 .Latest release:
 [source]
 ----
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hajdusp/raptor@v1.0.6/styles.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hajdusp/raptor@v1.0.7/styles.min.css">
 ----
 
 
