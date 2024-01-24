@@ -6,10 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Raptor index</title>
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.min.css">
-    <link rel="stylesheet" href="demo.css">
+    <script defer type="module" src="app.js"></script>
+    <style>
+        .demo-form {
+            background-color: var(--r-light);
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        .demo-form2 {
+            background-color: transparent;
+        }
+    </style>
 </head>
 <body class="body-grid">
 <!--#include virtual="includes/navbar.shtml" -->
