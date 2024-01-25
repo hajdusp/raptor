@@ -1,2 +1,2 @@
-import {hello} from "./scripts/hello.js";
+import {hello} from "./modules/hello.js";
 hello();
