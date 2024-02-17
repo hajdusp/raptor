@@ -39,26 +39,13 @@ textarea {
   width: 100%;
   padding: .5rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--r-lightgray);
-  border-radius: 4px;
+  border: 1px solid $lightgray;
+  border-radius: $border-radius;
 }
 
 input:focus {
-  outline: 1px solid var(--r-blue);
+  outline: 1px solid $blue;
   border-color: transparent;
-}
-
-
-.search-input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 38px;
-}
-
-.search-button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  height: 38px;
 }
 
 label {
@@ -96,7 +83,7 @@ input[type=checkbox] + label:after {
   height: 18px;
   position: absolute;
   left: 0;
-  border: 1px solid #757575;
+  border: 1px solid $gray;
   border-radius: 2px;
 }
 
@@ -106,8 +93,8 @@ input[type=checkbox]:checked + label:after {
   font-size: 16px;
   text-align: center;
   line-height: 16px;
-  background: var(--r-blue);
-  border-color: var(--r-blue);
+  background: $blue;
+  border-color: $blue;
 }
 
 input[type="radio"] {
@@ -120,23 +107,23 @@ textarea {
 }
 
 .required:after {
-  color: var(--r-red);
+  color: $red;
   content: ' *';
 }
 
 .error {
-  color: var(--r-red);
+  color: $red;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--r-gray);
+  color: $gray;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: var(--r-gray);
+  color: $gray;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: var(--r-gray);
+  color: $gray;
 }

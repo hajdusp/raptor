@@ -7,16 +7,17 @@
 .button {
   padding: .5rem 1rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   color: white;
-  background-color: var(--r-green);
-  border: .1rem solid var(--r-green);
-  border-radius: .375rem;
+  background-color: $green;
+  border: .1rem solid $green;
+  border-radius: $border-radius;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

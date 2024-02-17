@@ -6,21 +6,6 @@
   grid-template-rows: auto 1fr auto; /*  nav main footer */
 }
 
-/* http://nicolasgallagher.com/micro-clearfix-hack */
-/* You need them after using floating elements, for example floating images in blog posts */
-.clearfix:before,
-.clearfix:after,
-.container:before,
-.container:after {
-  display: table;
-  content: " ";
-}
-
-.clearfix:after,
-.container:after {
-  clear: both;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;

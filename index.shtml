@@ -12,7 +12,7 @@
     <script defer type="module" src="app.js"></script>
     <style>
         .demo-form {
-            background-color: var(--r-light);
+            background-color: whitesmoke;
             padding: 2rem;
             max-width: 600px;
         }
