@@ -1,0 +1,14 @@
+{
+  "name": "raptor",
+  "version": "1.0.0",
+  "description": "Main goals of this project: - create an HTML / SHTML starter template for different projects fast - easily integrate the html components and styles later into your application",
+  "main": "app.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=compressed styles.scss:styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
