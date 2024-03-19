@@ -33,3 +33,5 @@
         <div class="error">error message color</div>
     </form>
 </div>
+<input type="checkbox" name="gg" id="gg">
+<label for="gg">label</label>
