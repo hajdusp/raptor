@@ -20,9 +20,10 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  filter: brightness(1);
 }
 
 .button:hover {
-  opacity: 0.9;
+  filter: brightness(0.95);
   text-decoration: none;
 }
