@@ -1,14 +1,15 @@
 {
   "name": "raptor",
-  "version": "1.0.0",
-  "description": "Main goals of this project: - create an HTML / SHTML starter template for different projects fast - easily integrate the html components and styles later into your application",
-  "main": "app.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "sass-dev": "sass --watch --update --style=compressed styles.scss:styles.css"
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "sass": "^1.71.1"
-  },
-  "author": "",
-  "license": "ISC"
+    "sass": "^1.88.0",
+    "vite": "^6.3.5"
+  }
 }
