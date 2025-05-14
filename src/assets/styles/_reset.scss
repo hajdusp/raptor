@@ -22,13 +22,18 @@ html {
   clear: both;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+form {
   margin: 0;
   padding: 0;
-}
-
-img {
-  width: 100%;
-  vertical-align: middle; /*your images will be pixel-perfect relation to other elements, but cannot position img-tag icons with buttons for example...*/
-  height: auto;
 }
