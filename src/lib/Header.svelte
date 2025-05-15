@@ -1,45 +1,15 @@
 <header>
   <div class="container">
     <a href="/">
-      <img src="/vite.svg" alt="" />
+      <img src="/raptor.svg" alt="" />
+      <h3>Raptor CSS</h3>
     </a>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/">Docs</a></li>
+        <li><span class="material-icons-outlined">dark_mode</span></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<style lang="scss">
-  header {
-    border-bottom: 1px solid lightgray;
-  }
-
-  header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      height: 2rem;
-    }
-
-    nav {
-      ul {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      ul li {
-        display: flex;
-      }
-
-      ul li a {
-        padding: 1rem;
-      }
-    }
-  }
-</style>

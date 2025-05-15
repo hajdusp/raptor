@@ -1,11 +1,17 @@
-$smoke: #F0F3F5;
-$lightgray: #CCCCCC;
-$gray: #7B7B7B;
-$darkgray: #2B2B2B;
+$smoke: #f0f3f5;
+$lightgray: #cccccc;
+$gray: #7b7b7b;
+$darkgray: #454545;
+$dark: #2b2b2b;
 $black: #191919;
-$red: #F25F5C;
-$green: #6FA136;
-$blue: #247BA0;
+$red: #f25f5c;
+$green: #6fa136;
+$blue: #247ba0;
 
 $border-radius: 0.25rem;
 $box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+:root {
+  --color-text-primary: $dark;
+  --color-text-secondary: $darkgray;
+}

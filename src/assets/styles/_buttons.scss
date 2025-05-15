@@ -2,10 +2,14 @@
 
 /*                                         BUTTONS
 --------------------------------------------------------------------------------------------*/
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
   cursor: pointer;
 }
 
+button,
 .button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -25,6 +29,7 @@
   filter: brightness(1);
 }
 
+button,
 .button:hover {
   filter: brightness(0.95);
   text-decoration: none;

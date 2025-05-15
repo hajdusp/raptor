@@ -1,5 +1,5 @@
 /* keep footer at the bottom */
-.body-grid {
+#app {
   height: 100%;
   min-height: 100vh;
   display: grid;
@@ -11,4 +11,10 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.grid-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1rem;
 }

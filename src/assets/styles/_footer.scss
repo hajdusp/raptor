@@ -1,0 +1,13 @@
+footer {
+  background-color: #6fa136;
+  color: white;
+  font-size: 0.875rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    min-height: 2rem;
+  }
+}

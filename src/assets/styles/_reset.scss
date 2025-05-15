@@ -10,18 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/* http://nicolasgallagher.com/micro-clearfix-hack */
-/* You need them after using floating elements, for example floating images in blog posts */
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: " ";
-}
-
-.clearfix:after {
-  clear: both;
-}
-
 body,
 h1,
 h2,
