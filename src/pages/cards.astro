@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import hill from '../assets/images/hill.png';
+---
+<Layout>
+    <h1>Cards</h1>
+    <section>
+        <h2>Default cards</h2>
+        <div class="card">
+            <img src={hill.src} alt="nature image">
+            <hgroup>
+                <h3>Card Title</h3>
+                <p>Card description</p>
+            </hgroup>
+            <footer>
+                card footer
+            </footer>
+        </div>
+    </section>
+
+    <h2>Product cards</h2>
+</Layout>
+
+<style>
+    section {
+        margin-bottom: 3rem;
+    }
+</style>
