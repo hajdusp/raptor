@@ -1,31 +1,34 @@
 ---
-import "../styles/global.scss"
+import 'material-icons/iconfont/filled.css';
+import '../styles/global.scss';
 import Sidebar from '../components/Sidebar.astro';
+import {ClientRouter} from 'astro:transitions';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body class="main-layout">
-		<Sidebar />
-        <main>
-            <slot />
-        </main>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Astro Basics</title>
+    <ClientRouter />
+</head>
+<body class="main-layout">
+<Sidebar />
+<main>
+    <slot />
+</main>
+</body>
 </html>
 
 <style>
-.main-layout {
-	display: flex;
-}
+    .main-layout {
+        display: flex;
+    }
 
-main {
-    padding: 2rem;
-}
+    main {
+        padding: 1.5rem;
+    }
 </style>

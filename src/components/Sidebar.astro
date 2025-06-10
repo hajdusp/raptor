@@ -8,16 +8,23 @@ import logo from "../assets/raptor.svg"
     <nav>
         <a href="/" class="nav-link">Home</a>
         <a href="/buttons" class="nav-link">Buttons</a>
+        <a href="/forms" class="nav-link">Forms</a>
     </nav>
 </div>
 
 <style>
     .navbar {
-        padding: 1rem;
-        background: whitesmoke;
+        padding: 1.5rem;
+        background: var(--color-gray);
+        color: white;
 
         & nav {
             display: grid;
+        }
+
+        & a {
+            color: white;
+            text-decoration: none;
         }
     }
 </style>

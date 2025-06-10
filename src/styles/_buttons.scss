@@ -1,19 +1,20 @@
 button,
 .button {
+    appearance: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.25rem;
     border: 1px solid var(--color-gray);
     background-color: var(--color-gray);
     color: white;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius-md);
     cursor: pointer;
     transition: filter 0.2s ease; // Add transition for smooth effect
-    
+
     &:hover {
         filter: brightness(0.9); // Reduce brightness to 90% on hover
     }
@@ -22,9 +23,35 @@ button,
         filter: brightness(1.618);
         cursor: not-allowed;
     }
+
+    & .material-icons {
+        font-size: 1.125rem;
+        line-height: var(--font-size-sm);
+    }
 }
 
 .button-outline {
-    background-color: white;
+    background: transparent;
     color: var(--color-gray);
+
+    &:hover {
+        background-color: var(--color-lightgray);
+        filter: none;
+    }
+
+}
+
+.button-transparent {
+    background: transparent;
+    color: inherit;
+    border: 1px transparent;
+
+    &:hover {
+        background-color: var(--color-lightgray);
+        filter: none;
+    }
+}
+
+.button-icon-only {
+    padding: 0.5rem;
 }

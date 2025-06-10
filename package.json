@@ -12,6 +12,7 @@
     "astro": "^5.9.2"
   },
   "devDependencies": {
+    "material-icons": "^1.13.14",
     "sass": "^1.89.2"
   }
 }
