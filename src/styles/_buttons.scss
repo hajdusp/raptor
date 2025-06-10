@@ -1,0 +1,30 @@
+button,
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-gray);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: filter 0.2s ease; // Add transition for smooth effect
+    
+    &:hover {
+        filter: brightness(0.9); // Reduce brightness to 90% on hover
+    }
+
+    &:disabled {
+        filter: brightness(1.618);
+        cursor: not-allowed;
+    }
+}
+
+.button-outline {
+    background-color: white;
+    color: var(--color-gray);
+}

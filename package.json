@@ -1,17 +1,17 @@
 {
   "name": "raptor",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview --open"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.9.2"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "sass": "^1.88.0",
-    "svelte": "^5.28.1",
-    "vite": "^6.3.5"
+    "sass": "^1.89.2"
   }
 }

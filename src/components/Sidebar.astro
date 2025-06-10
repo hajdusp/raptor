@@ -1,0 +1,23 @@
+---
+import logo from "../assets/raptor.svg"
+// Sidebar component for navigation
+---
+
+<div class="navbar">
+    <img src={logo.src} alt="logo" class="logo">
+    <nav>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/buttons" class="nav-link">Buttons</a>
+    </nav>
+</div>
+
+<style>
+    .navbar {
+        padding: 1rem;
+        background: whitesmoke;
+
+        & nav {
+            display: grid;
+        }
+    }
+</style>
