@@ -4,6 +4,15 @@
     border: var(--border);
     border-radius: var(--border-radius-lg);
 
+    & figure {
+        line-height: 0;
+
+        & img {
+            height: 160px;
+            object-fit: cover;
+        }
+    }
+
     & hgroup {
         padding: 1rem;
     }
