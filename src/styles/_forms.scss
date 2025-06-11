@@ -26,6 +26,10 @@ form {
         }
     }
 
+    input[type="date"] {
+        padding: calc(0.5rem - 1px) 0.5rem;
+    }
+
     fieldset {
         border: var(--border);
         border-radius: var(--border-radius);

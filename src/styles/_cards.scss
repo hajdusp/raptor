@@ -1,4 +1,5 @@
 .card {
+    width: 100%;
     max-width: 320px;
     overflow: hidden;
     border: var(--border);
@@ -13,11 +14,39 @@
         }
     }
 
-    & hgroup {
+    & section {
         padding: 1rem;
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    & hgroup {
+
+        min-width: 0;
+        display: grid;
+        gap: 0.5rem;
     }
 
     & footer {
-        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    & h3 {
+        white-space: nowrap; /* Keep text on one line */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis (...) */
+        margin: 0; /* Remove default margin for layout */
+    }
+
+    & p {
+        display: -webkit-box; /* Fallback for old webkit browsers */
+        -webkit-line-clamp: 2; /* Show max 2 lines */
+        -webkit-box-orient: vertical; /* Vertical layout for the box */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis (...) */
+        margin: 0; /* Remove default margin for layout */
+        font-size: var(--font-size-sm);
     }
 }
