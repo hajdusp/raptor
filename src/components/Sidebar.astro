@@ -4,12 +4,22 @@ import logo from '../assets/raptor.svg';
 ---
 
 <div class="navbar">
-    <img src={logo.src} alt="logo" class="logo">
+    <a href="/"><img src={logo.src} alt="logo" class="logo"></a>
     <nav>
-        <a href="/" class="nav-link">Home</a>
-        <a href="/buttons" class="nav-link">Buttons</a>
-        <a href="/forms" class="nav-link">Forms</a>
-        <a href="/cards" class="nav-link">Cards</a>
+        <ul>
+            <li><h3>Components</h3></li>
+            <li><a href="/buttons" class="nav-link">Buttons</a></li>
+            <li><a href="/forms" class="nav-link">Forms</a></li>
+            <li><a href="/cards" class="nav-link">Cards</a></li>
+        </ul>
+        <ul>
+            <li><h3>Apps</h3></li>
+            <li><a href="/buttons" class="nav-link">ToDo</a></li>
+            <li><a href="/forms" class="nav-link">Temperature converter</a></li>
+            <li><a href="/cards" class="nav-link">Faszom tudja</a></li>
+        </ul>
+
+
     </nav>
 </div>
 
@@ -19,13 +29,27 @@ import logo from '../assets/raptor.svg';
         background: var(--color-gray);
         color: white;
 
-        & nav {
+        nav {
             display: grid;
-        }
 
-        & a {
-            color: white;
-            text-decoration: none;
+            h3 {
+                margin: 1rem 0;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul li a {
+                color: white;
+                text-decoration: none;
+            }
         }
+    }
+
+    .logo {
+        width: 3rem;
     }
 </style>
