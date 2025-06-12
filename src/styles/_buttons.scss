@@ -16,7 +16,7 @@ button,
     transition: filter 0.2s ease; // Add transition for smooth effect
 
     &:hover {
-        filter: brightness(0.9); // Reduce brightness to 90% on hover
+        filter: brightness(0.8);
     }
 
     &:disabled {
@@ -30,25 +30,15 @@ button,
 }
 
 .button-outline {
-    background: transparent;
-    color: var(--color-gray);
-
-    &:hover {
-        background-color: var(--color-lightgray);
-        filter: none;
-    }
-
+    background: inherit;
+    color: inherit;
+    border-color: inherit;
 }
 
 .button-transparent {
     background: transparent;
     color: inherit;
     border: 1px transparent;
-
-    &:hover {
-        background-color: var(--color-lightgray);
-        filter: none;
-    }
 }
 
 .button-icon-only {

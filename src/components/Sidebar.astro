@@ -3,9 +3,12 @@ import logo from '../assets/raptor.svg';
 // Sidebar component for navigation
 ---
 
-<div class="navbar">
-    <a href="/"><img src={logo.src} alt="logo" class="logo"></a>
-    <nav>
+<div id="navbar" class="sidebar">
+    <div class="sidebar__controls">
+        <a href="/"><img src={logo.src} alt="logo" class="sidebar__logo"></a>
+        <button id="sidebar__button" class="button-transparent button-icon-only"><span class="material-icons">menu</span></button>
+    </div>
+    <nav id="sidebar__menu" class="sidebar__menu">
         <ul>
             <li><h3>Components</h3></li>
             <li><a href="/buttons" class="nav-link">Buttons</a></li>
@@ -14,42 +17,87 @@ import logo from '../assets/raptor.svg';
         </ul>
         <ul>
             <li><h3>Apps</h3></li>
-            <li><a href="/buttons" class="nav-link">ToDo</a></li>
-            <li><a href="/forms" class="nav-link">Temperature converter</a></li>
-            <li><a href="/cards" class="nav-link">Faszom tudja</a></li>
+            <li><a href="/todo" class="nav-link">ToDo</a></li>
+            <li><a href="/temperature-converter" class="nav-link">Temperature converter</a></li>
         </ul>
-
-
     </nav>
 </div>
 
 <style>
-    .navbar {
-        padding: 1.5rem;
-        background: var(--color-gray);
+    .sidebar {
+        background-color: var(--color-black-soft);
         color: white;
+        display: flex;
+        align-items: flex-start;
+    }
 
-        nav {
-            display: grid;
+    .sidebar__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: var(--color-black);
+        height: 100%;
+        padding: 0.5rem;
 
-            h3 {
-                margin: 1rem 0;
-            }
+        a {
+            line-height: 0;
+        }
 
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            ul li a {
-                color: white;
-                text-decoration: none;
+        button {
+            @media screen and (min-width: 599.98px) {
+                display: none;
             }
         }
     }
 
-    .logo {
-        width: 3rem;
+    .sidebar__logo {
+        width: 2rem;
     }
+
+    .sidebar__menu {
+        display: grid;
+        padding: 1rem;
+        transition: all 0.1s ease-in-out;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+            line-height: 1.25;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .sidebar__menu-active {
+        width: 100% !important;
+        padding: 1rem !important;
+    }
+
 </style>
+
+<script>
+    document.addEventListener('astro:page-load', () => {
+        const toggle = document.getElementById('sidebar__button');
+        const menu = document.getElementById('sidebar__menu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('sidebar__menu-active');
+                console.log('clicked');
+            });
+        }
+        console.log('loaded');
+    });
+</script>

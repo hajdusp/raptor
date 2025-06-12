@@ -20,6 +20,7 @@ import {ClientRouter} from 'astro:transitions';
 <main>
     <slot />
 </main>
+
 </body>
 </html>
 
@@ -31,5 +32,9 @@ import {ClientRouter} from 'astro:transitions';
     main {
         padding: 1.5rem;
         width: 100%;
+
+        @media screen and (max-width: 600px) {
+            padding: 0.5rem 1rem;
+        }
     }
 </style>
