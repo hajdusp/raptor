@@ -63,17 +63,22 @@
     "figure hgroup"
     "figure footer";
 
-    figure {
+    @media (max-width: 480px) {
+        display: block;
+        max-width: 320px;
+    }
+
+    & figure {
         grid-area: figure;
     }
 
-    hgroup {
+    & hgroup {
         grid-area: hgroup;
         gap: 0.25rem;
         padding: 0.75rem;
     }
 
-    footer {
+    & footer {
         grid-area: footer;
         padding: 0 0.75rem 0.75rem 0.75rem;
         align-self: flex-end;

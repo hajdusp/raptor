@@ -1,18 +1,18 @@
 {
-  "name": "raptor",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^5.9.2"
-  },
-  "devDependencies": {
-    "material-icons": "^1.13.14",
-    "sass": "^1.89.2"
-  }
+    "name": "raptor",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev --open",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "astro": "^5.9.2"
+    },
+    "devDependencies": {
+        "material-icons": "^1.13.14",
+        "sass": "^1.89.2"
+    }
 }
