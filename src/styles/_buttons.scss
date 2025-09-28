@@ -1,5 +1,5 @@
 button,
-.button {
+.r-button {
     appearance: none;
     display: inline-flex;
     align-items: center;
@@ -29,18 +29,18 @@ button,
     }
 }
 
-.button-outline {
+.r-button-outline {
     background: inherit;
     color: inherit;
     border-color: inherit;
 }
 
-.button-transparent {
+.r-button-transparent {
     background: transparent;
     color: inherit;
     border: 1px transparent;
 }
 
-.button-icon-only {
+.r-button-icon-only {
     padding: 0.5rem;
 }

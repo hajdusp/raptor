@@ -1,4 +1,4 @@
-.card {
+.r-card {
     width: 100%;
     max-width: 320px;
     overflow: hidden;
@@ -15,7 +15,7 @@
         }
     }
 
-    & hgroup {
+    & header {
         padding: 1rem;
         min-width: 0;
         display: grid;
@@ -52,7 +52,7 @@
     }
 }
 
-.card-vertical {
+.r-card-vertical {
     max-width: 480px;
     padding-bottom: 0;
     display: grid;
@@ -60,7 +60,7 @@
     gap: 0;
     grid-auto-flow: row;
     grid-template-areas:
-    "figure hgroup"
+    "figure header"
     "figure footer";
 
     @media (max-width: 480px) {
@@ -72,8 +72,8 @@
         grid-area: figure;
     }
 
-    & hgroup {
-        grid-area: hgroup;
+    & header {
+        grid-area: header;
         gap: 0.25rem;
         padding: 0.75rem;
     }
