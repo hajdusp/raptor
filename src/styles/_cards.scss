@@ -2,8 +2,8 @@
     width: 100%;
     max-width: 320px;
     overflow: hidden;
-    border: var(--border);
-    border-radius: var(--border-radius-lg);
+    border: var(--r-border);
+    border-radius: var(--r-border-radius-lg);
 
     & figure {
         line-height: 0;
@@ -48,7 +48,7 @@
         overflow: hidden; /* Hide overflow */
         text-overflow: ellipsis; /* Add ellipsis (...) */
         margin: 0; /* Remove default margin for layout */
-        font-size: var(--font-size-sm);
+        font-size: var(--r-font-size-sm);
     }
 }
 

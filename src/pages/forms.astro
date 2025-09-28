@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
     <h1>Forms</h1>
     <div class="form-container">
-        <form class="form">
+        <form class="r-form">
             <section>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -106,7 +106,7 @@ import Layout from '../layouts/Layout.astro';
     }
 
     @media (min-width: 800px) {
-        form {
+        .r-form {
             grid-template-columns: 1fr 1fr;
         }
     }
