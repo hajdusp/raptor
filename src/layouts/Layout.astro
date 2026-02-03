@@ -1,6 +1,7 @@
 ---
 import 'material-icons/iconfont/filled.css';
 import '../styles/global.scss';
+import Navbar from '../components/Navbar.astro';
 import Sidebar from '../components/Sidebar.astro';
 import {ClientRouter} from 'astro:transitions';
 ---
@@ -16,6 +17,7 @@ import {ClientRouter} from 'astro:transitions';
     <ClientRouter />
 </head>
 <body class="main-layout">
+<Navbar />
 <Sidebar />
 <main>
     <slot />
@@ -23,17 +25,31 @@ import {ClientRouter} from 'astro:transitions';
 </body>
 </html>
 
-<style>
+<style is:global>
+
     .main-layout {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0;
+        grid-auto-flow: row;
+        grid-template-areas:
+    "navbar navbar navbar"
+    "sidebar main main";
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
     }
 
     main {
-        padding: 1.5rem;
-        width: 100%;
-
-        @media screen and (max-width: 480px) {
-            padding: 1rem;
-        }
+        grid-area: main;
+        padding: 2rem;
     }
+
+
 </style>

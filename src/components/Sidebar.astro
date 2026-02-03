@@ -3,11 +3,7 @@ import logo from '../assets/raptor.svg';
 // Sidebar component for navigation
 ---
 
-<div id="navbar" class="sidebar">
-    <div class="sidebar__controls">
-        <a href="/"><img src={logo.src} alt="logo" class="sidebar__logo"></a>
-        <button id="sidebar__button" class="button-transparent button-icon-only"><span class="material-icons">menu</span></button>
-    </div>
+<div class="sidebar">
     <nav id="sidebar__menu" class="sidebar__menu">
         <ul>
             <li><h3>Components</h3></li>
@@ -25,34 +21,9 @@ import logo from '../assets/raptor.svg';
 
 <style>
     .sidebar {
-        background-color: var(--r-color-dark);
-        color: white;
         display: flex;
         align-items: flex-start;
-    }
-
-    .sidebar__controls {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        background-color: var(--r-color-darkgray);
-        height: 100%;
-        padding: 0.5rem;
-
-        a {
-            line-height: 0;
-        }
-
-        button {
-            @media screen and (min-width: 599.98px) {
-                display: none;
-            }
-        }
-    }
-
-    .sidebar__logo {
-        width: 2rem;
+        border-right: var(--r-border);
     }
 
     .sidebar__menu {
@@ -70,37 +41,13 @@ import logo from '../assets/raptor.svg';
         }
 
         ul li a {
-            color: white;
             text-decoration: none;
             display: block;
         }
-
-        @media screen and (max-width: 600px) {
-            width: 0;
-            padding-left: 0;
-            padding-right: 0;
-            visibility: hidden;
-        }
-    }
-
-    .sidebar__menu-active {
-        visibility: visible;
-        width: 100% !important;
-        padding: 1rem !important;
     }
 
 </style>
 
 <script>
-    document.addEventListener('astro:page-load', () => {
-        const toggle = document.getElementById('sidebar__button');
-        const menu = document.getElementById('sidebar__menu');
-        if (toggle && menu) {
-            toggle.addEventListener('click', () => {
-                menu.classList.toggle('sidebar__menu-active');
-                console.log('clicked');
-            });
-        }
-        console.log('loaded');
-    });
+
 </script>
