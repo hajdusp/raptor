@@ -9,7 +9,10 @@
         "astro": "astro"
     },
     "dependencies": {
-        "astro": "^5.9.2"
+        "@analytics/localstorage-utils": "^0.1.12",
+        "astro": "^5.9.2",
+        "install": "^0.13.0",
+        "store2": "^2.14.4"
     },
     "devDependencies": {
         "material-icons": "^1.13.14",

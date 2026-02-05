@@ -1,0 +1,48 @@
+---
+const {prop} = Astro.props;
+---
+<div>
+    <label for="themes"></label>
+    <select name="themes" id="themes" class="theme-options">
+        <option value="system">System</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+    </select>
+</div>
+<button id="myButton">Hello</button>
+
+<style>
+    .theme-options {
+        padding: 0.25rem;
+        appearance: none;
+        background: transparent;
+        border-radius: 0.25rem;
+        text-align: center;
+    }
+</style>
+
+<script>
+    import store from 'store2';
+
+    const storeKey = 'theme';
+    const themeSelect = document.getElementById('themes') as HTMLSelectElement;
+
+    // Load saved theme on page load
+    const savedTheme = store.get(storeKey);
+    if (savedTheme) {
+        themeSelect.value = savedTheme;
+    }
+
+    // Save theme when changed
+    themeSelect?.addEventListener('change', (e) => {
+        const target = e.target as HTMLSelectElement;
+        store.set(storeKey, target.value);
+    });
+
+    const myButton = document.getElementById('myButton');
+
+    myButton?.addEventListener('click', (e) => {
+        alert('I work now!');
+    });
+</script>
+

@@ -1,12 +1,18 @@
 ---
+import ThemeSwitch from './ThemeSwitch.astro';
 const {prop} = Astro.props;
 ---
 <div class="navbar">
-    navbar
+    <a href="/">navbar</a>
+    <ThemeSwitch />
 </div>
 
 <style>
     .navbar {
         padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 </style>
