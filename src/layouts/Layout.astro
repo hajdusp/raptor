@@ -7,7 +7,7 @@ import {ClientRouter} from 'astro:transitions';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="system">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -51,5 +51,21 @@ import {ClientRouter} from 'astro:transitions';
         padding: 2rem;
     }
 
-
 </style>
+<script is:inline>
+    // wrap the functionality
+    function setActiveTheme() {
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    }
+
+    // run at the initial page load
+    setActiveTheme();
+
+    // re-run at navigation
+    document.addEventListener('astro:after-swap', setActiveTheme);
+</script>
+

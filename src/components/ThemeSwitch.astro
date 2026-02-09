@@ -2,14 +2,13 @@
 const {prop} = Astro.props;
 ---
 <div>
-    <label for="themes"></label>
-    <select name="themes" id="themes" class="theme-options">
+    <label for="theme-switch"></label>
+    <select name="themes" id="theme-switch" class="theme-options">
         <option value="system">System</option>
         <option value="dark">Dark</option>
         <option value="light">Light</option>
     </select>
 </div>
-<button id="myButton">Hello</button>
 
 <style>
     .theme-options {
@@ -21,28 +20,34 @@ const {prop} = Astro.props;
     }
 </style>
 
-<script>
-    import store from 'store2';
+<script is:inline>
 
-    const storeKey = 'theme';
-    const themeSelect = document.getElementById('themes') as HTMLSelectElement;
+    // check if a theme is saved in the localStorage and set its value as selected
+    function setCurrentTheme() {
+        const themeSwitch = document.querySelector('#theme-switch');
+        const savedTheme = localStorage.getItem('theme');
 
-    // Load saved theme on page load
-    const savedTheme = store.get(storeKey);
-    if (savedTheme) {
-        themeSelect.value = savedTheme;
+        if (savedTheme) {
+            themeSwitch.value = savedTheme;
+        }
     }
 
-    // Save theme when changed
-    themeSelect?.addEventListener('change', (e) => {
-        const target = e.target as HTMLSelectElement;
-        store.set(storeKey, target.value);
-    });
+    setCurrentTheme();
+    document.addEventListener('astro:after-swap', setCurrentTheme);
 
-    const myButton = document.getElementById('myButton');
+    // onchange set the localstorage
+    function handleSwitch() {
+        const themeSwitch = document.querySelector('#theme-switch');
 
-    myButton?.addEventListener('click', (e) => {
-        alert('I work now!');
-    });
+        themeSwitch?.addEventListener('change', (e) => {
+            const newValue = e.target.value;
+            localStorage.setItem('theme', newValue);
+            themeSwitch.value = newValue;
+            document.documentElement.dataset.theme = newValue;
+        });
+    }
+
+    handleSwitch();
+    document.addEventListener('astro:after-swap', handleSwitch);
 </script>
 
