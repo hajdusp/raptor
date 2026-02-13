@@ -1,59 +1,59 @@
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --r-color-dark: #121212;
-    --r-color-off-white: #F0F0F0;
+  --r-color-dark: #121212;
+  --r-color-off-white: #F0F0F0;
 
-    --r-color-text: var(--r-color-dark);
-    --r-color-background: var(--r-color-off-white);
+  --r-color-text: var(--r-color-dark);
+  --r-color-background: var(--r-color-off-white);
 
-    color-scheme: light;
+  color-scheme: light;
 }
 
 // #1 System based theme selection
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-        --r-color-text: var(--r-color-off-white);
-        --r-color-background: var(--r-color-dark);
-    }
+  :root {
+    color-scheme: dark;
+    --r-color-text: var(--r-color-off-white);
+    --r-color-background: var(--r-color-dark);
+  }
 }
 
 // #2 Manual theme selection if the theme is previously saved by the user
 
 html[data-theme="light"] {
-    color-scheme: light;
-    --r-color-text: var(--r-color-dark);
-    --r-color-background: var(--r-color-off-white);
+  color-scheme: light;
+  --r-color-text: var(--r-color-dark);
+  --r-color-background: var(--r-color-off-white);
 }
 
 html[data-theme="dark"] {
-    color-scheme: dark;
-    --r-color-text: var(--r-color-off-white);
-    --r-color-background: var(--r-color-dark);
+  color-scheme: dark;
+  --r-color-text: var(--r-color-off-white);
+  --r-color-background: var(--r-color-dark);
 }
 
 body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    color: var(--r-color-text);
-    background-color: var(--r-color-background);
-    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  color: var(--r-color-text);
+  background-color: var(--r-color-background);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 
-    margin: 0;
-    min-height: 100vh;
+  margin: 0;
+  min-height: 100vh;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
