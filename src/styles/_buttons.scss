@@ -1,10 +1,10 @@
 .button {
-  cursor: pointer;
-  border: 1px solid var(--r-color-dark);
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--r-color-dark);
-  color: var(--r-color-off-white);
-  font-size: 1rem;
-  line-height: 1;
+    cursor: pointer;
+    border: 1px solid var(--r-color-black);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--r-color-black);
+    color: var(--r-color-white);
+    font-size: 1rem;
+    line-height: 1;
 }

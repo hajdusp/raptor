@@ -7,13 +7,29 @@ import {ClientRouter} from 'astro:transitions';
 ---
 
 <!doctype html>
-<html lang="en" data-theme="system">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Raptor</title>
+    <script is:inline>
+        // Apply theme immediately before render to prevent flash
+
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme && savedTheme !== 'system') {
+                document.documentElement.dataset.theme = savedTheme;
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        }
+
+        loadTheme();
+        document.addEventListener('astro:after-swap', loadTheme);
+    </script>
     <ClientRouter />
 </head>
 <body class="main-layout">
@@ -52,20 +68,4 @@ import {ClientRouter} from 'astro:transitions';
     }
 
 </style>
-<script is:inline>
-    // wrap the functionality
-    function setActiveTheme() {
-        const savedTheme = localStorage.getItem('theme');
-
-        if (savedTheme) {
-            document.documentElement.dataset.theme = savedTheme;
-        }
-    }
-
-    // run at the initial page load
-    setActiveTheme();
-
-    // re-run at navigation
-    document.addEventListener('astro:after-swap', setActiveTheme);
-</script>
 

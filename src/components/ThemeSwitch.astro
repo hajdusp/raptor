@@ -4,9 +4,9 @@ const {prop} = Astro.props;
 <div>
     <label for="theme-switch"></label>
     <select name="themes" id="theme-switch" class="theme-options">
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
+        <option value="system">🖥 System</option>
+        <option value="dark">🌙 Dark</option>
+        <option value="light">☀️ Light</option>
     </select>
 </div>
 
@@ -29,6 +29,8 @@ const {prop} = Astro.props;
 
         if (savedTheme) {
             themeSwitch.value = savedTheme;
+        } else {
+            themeSwitch.value = 'system';
         }
     }
 
@@ -43,7 +45,11 @@ const {prop} = Astro.props;
             const newValue = e.target.value;
             localStorage.setItem('theme', newValue);
             themeSwitch.value = newValue;
-            document.documentElement.dataset.theme = newValue;
+            if (newValue && newValue !== 'system') {
+                document.documentElement.dataset.theme = newValue;
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
         });
     }
 
