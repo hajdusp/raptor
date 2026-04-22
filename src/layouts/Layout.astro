@@ -19,11 +19,12 @@ import {ClientRouter} from 'astro:transitions';
 
         function loadTheme() {
             const savedTheme = localStorage.getItem('theme');
+            const html = document.documentElement;
 
             if (savedTheme && savedTheme !== 'system') {
-                document.documentElement.dataset.theme = savedTheme;
+                html.dataset.theme = savedTheme;
             } else {
-                document.documentElement.removeAttribute('data-theme');
+                html.removeAttribute('data-theme');
             }
         }
 

@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-/*
- #1 System based theme selection
- */
-
 :root {
     --color-neutral-950: oklch(14.5% 0 0);
     --color-neutral-700: oklch(37.1% 0 0);
@@ -18,10 +14,6 @@
     --background-color: light-dark(var(--color-neutral-100), var(--color-neutral-700));
 }
 
-/*
- #2 Manual theme selection if the theme is previously saved by the user
- */
-
 :root[data-theme="light"] {
     color-scheme: light;
     --heading-color: var(--color-neutral-950);
@@ -33,7 +25,7 @@
     color-scheme: dark;
     --heading-color: var(--color-white);
     --text-color: var(--color-neutral-400);
-    --background-color: var(--color-neutral-700);
+    --background-color: var(--color-neutral-950);
 }
 
 body {
